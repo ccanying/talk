@@ -10,57 +10,37 @@
         margin: 0px;
         padding: 0px;
     }
-    ul{
-        position: relative;
-        left: 50%;
-        bottom: 50%;
-        
-      
-     
-    }
-    li{
-        list-style: none;
-    }
-    .message{
-        height: 300px;
-        width: 500px;
-        border:1px solid blue ;
-    }
-    .text{
-        border: none;
-        width: 400px;
-        height: 30px;
-        border: 1px solid steelblue;
-    }
-    .button{
-        width: 100px;
-        height: 30px;
-        border: 1px solid pink;
-        background-color: goldenrod;
-        display: inline-block;
-        text-align: center;
-        line-height: 30px;
-        color: white;
-        margin-top: 10px;
-    }
-    .button:hover{
-        background-color: red;
-    }
-   
+    
     </style>
 </head>
-<body>
-    
-    <ul>
-        <li>
-            <div class="message"></div>
-        </li>
-        <li>
-            <form action="">
-                <input type="text" class="text">
-                <span  class="button">提交</span>
-            </form>
-        </li>
-    </ul>
+<body> 
+   <div id="app" class="app">
+     <div class="audio">
+         <video src=""></video>
+     </div>
+     <div class="buComment"></div>
+     <div class="auido"> </div>
+     <div class="talk"></div>
+     <div class="comment"></div>
+
+   </div>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0/axios.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.3.0/socket.io.js"></script>
+    <script>
+      new Vue({
+          el:"#app",
+          data:{
+              mes:""
+          },
+          methods: {
+              
+          },
+          mounted() {
+              
+          },
+      }) 
+     
+    </script>
 </body>
 </html>
